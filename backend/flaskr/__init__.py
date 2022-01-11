@@ -119,9 +119,7 @@ def create_app(test_config=None):
     @app.route("/questions", methods=["POST"])
     def add_question():
         form = AddForm()
-        print(form)
         search_term = request.form.get("search_term", "")
-        print(search_term)
 
         try:
 
@@ -149,7 +147,6 @@ def create_app(test_config=None):
     @app.route("/questions/search", methods=["POST"])
     def search_question():
         data = SearchForm()
-        print(data.searchTerm.data)
 
         try:
             if not data.searchTerm.data:
@@ -193,7 +190,6 @@ def create_app(test_config=None):
             abort(422)
 
         result = Question.query.filter(Question.id == random_question_id).one()
-        print([x.id for x in all_questions if x.id not in previous_questions])
 
         return jsonify({"success": True, "question": result.format()})
 
