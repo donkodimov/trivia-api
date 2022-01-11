@@ -59,7 +59,7 @@ idna==2.10
 iniconfig==1.1.1
 ipfshttpclient==0.8.0a2
 ipykernel==5.4.3
-ipython @ file:///opt/ipython
+ipython==8.0.0.dev0
 ipython-genutils==0.2.0
 ipywidgets==7.6.3
 itsdangerous==2.0.1
@@ -121,6 +121,7 @@ pyquery==1.4.3
 pyreadline==2.1
 pyrsistent==0.17.3
 python-dateutil==2.8.1
+python-dotenv==0.19.2
 pytz==2020.5
 pyzmq==21.0.1
 regex==2021.10.21

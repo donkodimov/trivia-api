@@ -3,13 +3,10 @@ from flask import Flask, request, abort, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS, cross_origin
 import random
-from sqlalchemy.sql.expression import true
 
 from sqlalchemy.sql.functions import current_date
 from flask_wtf import FlaskForm as Form
 from forms import *
-
-
 from models import setup_db, Question, Category
 
 
